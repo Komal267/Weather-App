@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="weather.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="search">
+        <input
+          class="search-input"
+          type="text"
+          placeholder="enter city name"
+        /><button class="search-icon">
+       
+        </button>
+      </div>
+
+      <div class="weather">
+        <img src="images/cloudy_snowing.png" class="weather-icon" />
+        <p class="description">broken clouds</p>
+        <h1 class="temp">30&deg;c</h1>
+        <h2 class="city">Delhi</h2>
+        <div class="details">
+          <div class="col">
+            <img src="humidity.png" />
+
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="wind speed.png" />
+ 
+            <div>
+              <p class="wind">50km /hr</p>
+              <p>Wind speed</p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="weather.js" ></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nerko+One&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Sevillana&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sansita", italic;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(53, 51, 51);
+}
+
+.main-wrapper {
+  border: 1px solid darkgrey;
+  width:60%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 20px;
+  background: linear-gradient(
+    to bottom,
+    rgb(151, 151, 175) 30%,
+    lightblue 100%
+  );
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-input {
+  font-size: 20px;
+  width: 80%;
+  height: 50px;
+  border: 0;
+  outline: 0;
+  margin-right: 10px;
+  border-radius: 9999px;
+  color: rgb(51, 50, 50);
+  background: lightblue;
+  padding: 10px;
+  flex: 1;
+}
+
+/* .search-icon {
+  border: 0;
+  outline: 0; 
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: lightblue;
+  color: rgb(196, 25, 25);
+  cursor: pointer;
+} */
+
+.weather-icon{
+width: 100px;
+margin: 30px 10px -10px 10px;
+/* margin-top: 30px; */
+}
+
+.description{
+  margin-top: 10px;
+  font-size: xx-large;
+}
+.weather h1{
+  font-size: 80px;
+  font-weight: 450;
+}
+
+.weather h2{
+  font-size: 40px;
+  font-weight: 350;
+  margin-top: -10px;
+}
+
+.weather .details{
+  display: flex;
+justify-content: space-between;
+padding: 0 20px;
+margin-top: 40px;
+}
+
+.col {
+display: flex;
+align-items: center;
+text-align: left;
+
+
+}
+.col img{
+
+  width: 70px;
+  margin-right: 10px;
+}
+
+.humidty,.wind{
+font-size: 30px;
+margin-top: -5px;
+
+} 
+
+
+.search-icon {
+  position: relative;
+  width: 40px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+  background-color: #f0f0f0; /* Optional: button background */
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.search-icon::before {
+  content: 'search'; /* Text for the icon (e.g., Material Icons text) */
+  font-family: 'Material Icons';
+  font-size: 24px; /* Adjust size as needed */
+  display: inline-block;
+  line-height: 1;
+}
